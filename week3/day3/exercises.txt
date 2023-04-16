@@ -1,0 +1,82 @@
+1 SAY HELLO 
+-----------
+
+inputs:
+- name: It cannot contain numbers. Dont allow alphabetical chars
+("-", " ", "'")
+process:
+- greeting user
+
+output:
+-greeting with name
+
+testCases: 
+
+1. 
+input: 'sss
+expected output: Error
+
+2.
+input: sahin1993
+expected output: Error
+
+3.
+input: sahin-1993
+expected output: Error
+
+4.
+input: Eva-Maria
+expected output: "Hello Eva-Maria"
+
+5.
+input: Ian O'Donnell
+expected output: "Hello Ian O'Donnell"
+
+Process:
+========
+1. Ask the user for an input
+2. Check input don't allow alpha chars except this list ("-", "`"," ", "-") 
+3. Print Greeting with user input.
+
+
+Refine process:
+==============
+Prompt "Type your name: "
+Check input name:
+    If don't contain number:
+        If input name alphabetical chars or in this list ("-", "`"," ", "-")
+            Print "Greeting " + "name"
+        else
+            error 
+    else
+        error
+
+
+
+2. COUNTING NUMBER OF CHARACTERS
+================================
+
+input:
+- Let user a input 
+
+process:
+- count chars of input
+
+
+Output:
+- prompt how many CHARACTERS input has.
+
+testCases:
+
+1.
+input: sahin
+expected output: 5
+
+2.
+input: sahin sahin
+expected output: 11
+
+3.
+input: sahin1993
+expected output: 9
+

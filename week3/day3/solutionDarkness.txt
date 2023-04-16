@@ -1,0 +1,58 @@
+speeds = person1 1, person2 2, person3 4, person4 5
+
+locationA = 0
+locaitonB = 0
+sendlimit <= 2
+returnLimit <= 1 
+walkingSpeed = slowest
+maxTime = 12
+torch = True
+time = 0
+
+SOLUTION
+
+check()
+    if time <= maxTime
+        raise Exception
+
+
+updateTime(person_time_a, person_time_b)
+    time += max(person_time_a, person_time_b)
+        
+
+count(args)
+    lengthArgs = [args]
+    return lengthArgs
+
+control()
+    if updateTime() and (locationA == 0 and locationB == 4)
+        return True
+
+# They, are the fastest
+Send person1 + person2 from location A to location B
+if updateTime(person1, person2)
+    locationB += count(person1,person2)
+    locationA -= count(person1,person2)
+
+# Because we need person1 for last step
+Return person2 from location B to location A
+if updateTime(person2) 
+locationB  -= count(person2) && locationA += count(person2)
+
+# Person3 and Person4 have highest value
+Send Person3 + Person4 from location A to location B
+if updateTime(person3 + person4) 
+locationA -= count(person3,person4) && locationB += count(person3, person4)
+
+# Person1 has a minimum value 
+Return Person1 from location B to location A 
+if updateTime(person1)
+locationB -= count(person1) && locationA += count(person1)
+
+# They are the last persons
+Send Person1 + person2 from location A to location B
+if updateTime(person1 + person2)
+locationA += count(person1 + person2) locationB -= count(person1, person2)
+
+if control() then "WIN"
+
