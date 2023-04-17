@@ -7,9 +7,10 @@
 
 | Week | Title | Projects|
 |-----|-------|-------|
-|Week 1|CLI & Git(hub) | [Project]()
+|Week 1|CLI & Git(hub) | [Project](https://github.com/denysbelskiy/game)
 |Week 2|HTML / CSS| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/Week2)
 |Week 3|Programing 101| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week3)
+|Week 4|Javscript| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week4)
 
 </div>
 
