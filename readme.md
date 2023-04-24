@@ -5,17 +5,23 @@
 
 <br>
 <br>
-<br>
-<br>
-<br>
 
+</div>
+You can visit also my blog https://blog.sahinyes.com/posts/poco/
+
+
+<br>
+<br>
+<br>
+<div align="center">
 
 | Week | Title | Projects|
 |-----|-------|-------|
-|Week 1|CLI & Git(hub) | [Project](https://github.com/denysbelskiy/game)|
-|Week 2|HTML / CSS| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/Week2)|
-|Week 3|Programing 101| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week3)|
-|Week 4|Javscript| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week4)|
+|Week 1|CLI & Git(hub) | [Project](https://github.com/denysbelskiy/game)
+|Week 2|HTML / CSS| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/Week2)
+|Week 3|Programing 101| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week3)
+|Week 4|JavaScript 101| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week4)
+|Week 4|JavsScript & DOM| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week4)
 
 </div>
 
