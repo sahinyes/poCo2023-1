@@ -1,0 +1,53 @@
+Retirement Calculator
+---------------------
+
+Inputs:
+- age: It must be just digit.
+- retireAge: It must be just digit.
+- currentYear: Get with JS function
+
+Output:
+- How many years left
+- In which year will you be retire
+
+testCases: 
+
+1.
+input:  -age: 25
+        -retireAge: 24
+expected output: Error
+
+2.
+input:  -age: -25
+        -retireAge: 25
+expected output: Error
+
+3.
+input:  -age: 25 age
+        -retireAge: 60
+expected output: Error
+
+Process:
+========
+1. Ask the user for inputs
+2. Check inputs are number and positive
+3. Compare inputs: age input must be always greater than retireAge input.
+4. Add differences of inputs to currentYear.
+
+Refine process:
+==============
+
+Prompt "What is your age? "
+Prompt "What age would you like to retire? "
+    Check input age and input retireAge:
+        if both are positive and digit:
+            if retireAge greater then age:
+                currentYear = getCurrentYearFunction
+                retire = retireAge - age
+                Print You have {retire} years left until you can retire.
+                Print It's {currentYear}, so you can retire in {currentYear} + {retire}
+            else
+                Error
+        else
+            Error
+    
