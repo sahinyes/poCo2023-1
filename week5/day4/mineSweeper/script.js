@@ -1,7 +1,7 @@
 
 // Set this constant to true to debug the placement of bombs without
 // having to click on all cells to reveal them.
-const CHEAT_REVEAL_ALL = true;
+const CHEAT_REVEAL_ALL = false;
 
 const ROWS_COUNT = 10;
 const COLS_COUNT = 10;
@@ -62,7 +62,7 @@ for (let i = 0; i <= 10; i++)
 render();
 
 
-//
+//  
 // Game functions definitions
 //
 
@@ -70,10 +70,24 @@ function discoverCell(row, col) {
   //
   // TODO: Task 5 - Reveal cells when clicked.
   //
-
+  cells[row][col].discovered = true
+  console.log(cells[row][col])
   //
   // TODO: Task 6 - Discover neighbor cells recursively, as long as there are no adjacent bombs to the current cell.
   //
+  for (let i = -1; i <= 1 ; i++) {
+    for (let j = -1; j <= 1 ; j++) {
+      
+      var newRow = row + i
+      var newCol = col + j
+
+      if (newRow <= 9 && newRow >= 0 && newCol <= 9 && newCol >= 0 && this.cells[newRow][newCol].isBomb == false)
+      {
+        cells[newRow][newCol].discovered = true
+      }      
+    }
+  }
+
 
   //
   // TODO: Task 8 - Implement defeat. If the player "discovers" a bomb (clicks on it without holding shift), set the variable defeat to true.
@@ -85,6 +99,8 @@ function flagCell(row, col) {
   // TODO: Task 7 - Implement flags. Flags allow the player to mark cells that they think contain a bomb.
   //                When clicking a cell and holding shift, function flagCell() will be called for you.
   //
+  this.cells[row][col].hasBeenFlagged = true
+
 }
 
 // This function is called once for each cell when rendering the game. The row and col of the current cell is
