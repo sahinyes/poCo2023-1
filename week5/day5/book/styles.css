@@ -1,0 +1,11 @@
+body {
+    white-space: break-spaces;
+}
+
+img {
+    height: 200px;
+}
+
+ul {
+    list-style: none;
+}

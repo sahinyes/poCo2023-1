@@ -5,6 +5,8 @@ const CHEAT_REVEAL_ALL = false;
 
 const ROWS_COUNT = 10;
 const COLS_COUNT = 10;
+const BOMBS_COUNT = 10;
+
 
 var defeat = false;
 var victory = false;
@@ -47,7 +49,7 @@ function getRandomInt(max) {
 }
 
 
-for (let i = 0; i <= 10; i++)
+for (let i = 0; i <= BOMBS_COUNT; i++)
 {
   var num1 = getRandomInt(10)
   var num2 = getRandomInt(10)
@@ -92,6 +94,12 @@ function discoverCell(row, col) {
   //
   // TODO: Task 8 - Implement defeat. If the player "discovers" a bomb (clicks on it without holding shift), set the variable defeat to true.
   //
+  if (this.cells[row][col].isBomb == true)
+  {
+    defeat = true
+  }
+
+
 }
 
 function flagCell(row, col) {
