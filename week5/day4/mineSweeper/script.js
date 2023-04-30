@@ -117,37 +117,72 @@ function countAdjacentBombs(row, col) {
   //
   // TODO: Task 4 - Adjacent bombs are bombs in cells touching our cell (also diagonally). Implement this function
   //                so that it returns the count of adjacent cells with bombs in them. 
-  //
-  return 1;
+  var count = 0;
+  for (var i = row - 1; i <= row + 1; i++) {
+    for (var j = col - 1; j <= col + 1; j++) {
+      if (i >= 0 && i < ROWS_COUNT && j >= 0 && j < COLS_COUNT && cells[i][j].isBomb) {
+        count++;
+      }
+    }
+  }
+  return count;
 }
 
 function getBombsCount() {
   //
   // TODO: Task 9 - Implement stats: the counters currently always display 0, calculate and return the relevant values.
   //
-  return 0;
+  var count = 0;
+  for (var row = 0; row < ROWS_COUNT; row++) {
+    for (var col = 0; col < COLS_COUNT; col++) {
+      if (cells[row][col].hasBeenFlagged) {
+        count++;
+      }
+    }
+  }
+  return count + "/" + BOMBS_COUNT;
+
 }
 
 function getClearedCells() {
   //
   // TODO: Task 9 - Implement stats: the counters currently always display 0, calculate and return the relevant values.
   //
-  return 0;
+
+  var count = 0;
+  for (var row = 0; row < ROWS_COUNT; row++) {
+    for (var col = 0; col < COLS_COUNT; col++) {
+      if (cells[row][col].discovered) {
+        count++;
+      }
+    }
+  }
+  return count;
+
 }
 
 function getTotalCellsToClear() {
   //
   // TODO: Task 9 - Implement stats: the counters currently always display 0, calculate and return the relevant values.
   //
-  return 0;
+  return ROWS_COUNT * COLS_COUNT - BOMBS_COUNT;
 }
 
 function checkForVictory() {
+
   //
   // TODO: Task 10 - Implement victory. If the player has revealed as many cells as they must (every cell that isn't a
   //                 bomb), set variable victory to true.
   //
-  return 0;
+  const clearedCells = getClearedCells();
+  const totalCellsToClear = getTotalCellsToClear();
+
+  if (clearedCells === totalCellsToClear) {
+    return true;
+  }
+
+  return false;
+
 }
 
 //
