@@ -1,0 +1,16 @@
+body {
+	font: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    /* background: linear-gradient(100deg, #fdcd3b 30%, #ffed4b 60%); */
+}
+
+#p {
+    font-size: 10px;
+    font-weight: bolder;
+    letter-spacing: 0;
+
+}
