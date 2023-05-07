@@ -22,6 +22,7 @@ You can visit also my blog https://blog.sahinyes.com/posts/poco/
 |Week 3|Programing 101| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week3)
 |Week 4|JavaScript 101| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week4)
 |Week 5|JavsScript & DOM| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week5)
+|Week 6|JS & Events, Ajax| [Project](https://github.com/sahinyes/poCo2023-1/tree/main/week6)
 
 </div>
 
