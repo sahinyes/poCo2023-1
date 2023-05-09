@@ -1,0 +1,17 @@
+.box {
+    padding-top: 100px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.deleteButton {
+    background-color: white;
+    border-style: solid 1px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+}
